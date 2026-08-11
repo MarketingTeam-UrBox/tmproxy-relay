@@ -18,13 +18,13 @@ async function getFreshProxy() {
     return cachedProxy;
   }
 
-  const resp = await fetch("https://tmproxy.com/api/proxy/get-current-proxy", {
+  const resp = await fetch("https://tmproxy.com/api/proxy/get-new-proxy", {
     method: "POST",
     headers: {
       accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ api_key: TMPROXY_API_KEY }),
+    body: JSON.stringify({ api_key: TMPROXY_API_KEY, id_location: 0, id_isp: 0 }),
   });
 
   if (!resp.ok) {
