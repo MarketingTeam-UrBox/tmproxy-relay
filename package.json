@@ -1,0 +1,14 @@
+{
+  "name": "tmproxy-relay",
+  "version": "1.0.0",
+  "description": "Relay service: fetch a URL through TMProxy Vietnam proxy and return raw bytes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "https-proxy-agent": "^7.0.4",
+    "node-fetch": "^2.7.0"
+  }
+}
